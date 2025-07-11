@@ -10,7 +10,7 @@ const AdminUsers = () => {
   const { authorization, API } = useAuth()
 
   const fetchUsers = async () => {
-    const res = await axios.get('http://localhost:3001/api/admin/users', {
+    const res = await axios.get(`${API}/api/admin/users`, {
       headers: { Authorization: authorization },
     })
     return res.data

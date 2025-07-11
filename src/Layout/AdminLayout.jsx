@@ -11,7 +11,16 @@ const AdminLayout = () => {
   console.log('Admin Layout', user);
 
   if (isLoading) {
-    return <div>Loading...</div>
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-purple-900 to-pink-800 text-white">
+        <div className="relative w-16 h-16">
+          <div className="absolute inset-0 rounded-full border-4 border-t-pink-500 border-l-purple-600 border-b-transparent border-r-transparent animate-spin"></div>
+          <div className="absolute inset-2 bg-black rounded-full flex items-center justify-center text-xs text-pink-400 font-bold">
+            Loading
+          </div>
+        </div>
+      </div>
+    )
   }
 
   if (!user || !user.isAdmin) {
@@ -77,7 +86,7 @@ const AdminLayout = () => {
           </h1>
         </header>
 
-    
+
         {location.pathname === '/admin' && (
           <motion.div
             className="flex-1 flex flex-col items-center justify-center text-center text-white px-4"
