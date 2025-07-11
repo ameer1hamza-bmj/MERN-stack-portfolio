@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-black text-white border-t border-white/10 backdrop-blur-md px-6 py-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
 
-        {/* Branding */}
+
         <div>
           <h2 className="text-2xl font-bold text-pink-400">MyPortfolio</h2>
           <p className="text-white/60 mt-2">
@@ -15,7 +15,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Navigation */}
+
         <div className="space-y-2">
           <h3 className="font-semibold text-white/80">Navigation</h3>
           <ul className="flex flex-col gap-2 text-sm">
@@ -26,7 +26,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social */}
+    
         <div className="space-y-2">
           <h3 className="font-semibold text-white/80">Connect</h3>
           <div className="flex justify-center md:justify-start gap-4 text-pink-400 mt-2">
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Line */}
+   
       <div className="mt-10 text-center text-xs text-white/50 border-t border-white/10 pt-4">
         © {new Date().getFullYear()} MyPortfolio. All rights reserved.
       </div>
