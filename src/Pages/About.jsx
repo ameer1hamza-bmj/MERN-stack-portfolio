@@ -12,7 +12,6 @@ const About = () => {
         className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 bg-white/10 p-10 rounded-3xl shadow-2xl backdrop-blur-md"
       >
 
-        {/* Left Section - Contact Info */}
         <div className="space-y-6 text-sm sm:text-base">
           <h2 className="text-2xl font-bold text-pink-300 mb-6">Contact Info</h2>
 
@@ -51,7 +50,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Right Section - About and Resume */}
         <div>
           <h1 className="text-4xl font-bold mb-4 text-pink-300">About Me</h1>
 
@@ -69,7 +67,6 @@ const About = () => {
             Let's connect and build something amazing.
           </p>
 
-          {/* Resume Button */}
           <motion.a
             href="https://drive.google.com/file/d/1EEzdoyz05E9e6x2XHt-0LS0_TV2OmDhc/view" 
             target="_blank"
