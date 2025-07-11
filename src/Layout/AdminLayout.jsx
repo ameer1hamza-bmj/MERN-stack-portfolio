@@ -16,7 +16,6 @@ const AdminLayout = () => {
 
   if (!user || !user.isAdmin) {
     return <Navigate to="/" />
-    console.log();
 
   }
 
@@ -29,7 +28,7 @@ const AdminLayout = () => {
   return (
     <div className="min-h-screen flex bg-gradient-to-br from-black via-purple-900 to-pink-900 text-white overflow-hidden">
 
-      {/* Mobile overlay */}
+
       {open && (
         <div
           className="fixed inset-0 bg-black/40 backdrop-blur-sm z-30 md:hidden"
@@ -37,7 +36,7 @@ const AdminLayout = () => {
         />
       )}
 
-      {/* Sidebar */}
+
       <aside
         className={`fixed top-0 left-0 h-full w-64 bg-white/10 p-6 border-r border-white/10 z-40 transform transition-transform duration-300 ease-in-out ${open ? 'translate-x-0' : '-translate-x-full'
           } md:translate-x-0 md:static`}
@@ -62,10 +61,10 @@ const AdminLayout = () => {
         </nav>
       </aside>
 
-      {/* Main Content */}
+
       <div className="flex-1 flex flex-col min-h-screen overflow-hidden">
 
-        {/* Topbar */}
+
         <header className="sticky top-0 z-20 flex items-center justify-between px-4 py-4 md:px-8 bg-black/30 border-b border-white/10 backdrop-blur-md">
           <button
             className="md:hidden p-2 bg-white/10 rounded-full"
@@ -78,7 +77,7 @@ const AdminLayout = () => {
           </h1>
         </header>
 
-        {/* Welcome Message (only on /admin) */}
+    
         {location.pathname === '/admin' && (
           <motion.div
             className="flex-1 flex flex-col items-center justify-center text-center text-white px-4"
@@ -104,7 +103,7 @@ const AdminLayout = () => {
           </motion.div>
         )}
 
-        {/* Outlet for nested routes */}
+
         {location.pathname !== '/admin' && (
           <main className="flex-1 overflow-y-auto p-4 md:p-8">
             <Outlet />
